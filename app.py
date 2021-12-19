@@ -4,7 +4,7 @@ import pystache
 
 # streamlit run app.py
 
-@st.cache(hash_funcs=(GPT2Tokenizer : lambda x: 1, GPT2LMHeadModel: lambda x: 2))
+@st.cache(hash_funcs={GPT2Tokenizer : lambda x: 1, GPT2LMHeadModel: lambda x: 2})
 def load_tokenizer_model():
     tokenizer = GPT2Tokenizer.from_pretrained('output')
     model = GPT2LMHeadModel.from_pretrained('output', pad_token_id=tokenizer.eos_token_id)
