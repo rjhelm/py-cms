@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- will be replaced with meta content -->
+		{% block metatags %} {% endblock %}
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<style>
+			html,
+			body {
+				height: 100%;
+			}
+			body {
+				font-family: sans-serif;
+				font-size: 18;
+				background-color: #f5f5f5;
+				display: flex;
+				flex-direction: column;
+			}
+			#nofooter {
+				flex: 1 0 auto;
+			}
+			darkbtn {
+				color: #66ff99;
+			}
+			.dark-mode {
+				background-color: black;
+				color: white;
+			}
+			#foot {
+				flex-shrink: 0;
+				font-family: sans-serif;
+				background-color: #bdffd3;
+				color: #00308f;
+				bottom: 0px;
+				width: 100%;
+			}
+			.card-group,
+			.card,
+			.card-footer,
+			.card-body {
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="bodydiv">
+			<div id="nofooter">
+				<nav
+					class="navbar navbar-expand-lg navbar-light bg-light shadow"
+					id="topnav"
+				>
+					<div class="container-fluid">
+						<a class="navbar-brand" href="{% url 'home' %}">
+							<img
+								src="/static/icons/logo.png"
+								width="30"
+								height="30"
+								class="d-inline-block rounded align-top"
+								alt="logo"
+								loading="lazy"
+							/>
+							Flacko Blog
+						</a>
+						<div class="nav justify-content-end">
+							<div class="d-inline">
+								<a
+									class="nav-link text-black font-weight-bold"
+									href="{% url 'posts'%}"
+									>Posts</a
+								>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<!-- Will be replaced with post content -->
+			</div>
+			<footer class="footer" id="foot">
+				<div class="container">
+					<h5 class="text-align-center">ryanjdev</h5>
+					<nav class="navbar navbar-expand=lg">
+						<div class="container-fluid">
+							<p>what it do</p>
+						</div>
+						<div class="nav justify-content-center" id="navfooter">
+							<span
+								><a
+									class="nav-link text-black font-weight-bold"
+									href="{% url 'about' %}"
+									>About</a
+								></span
+							>
+							<span
+								><a
+									class="nav-link text-black font-weight-bold"
+									href="{% url 'privacy' %}"
+									>Privacy</a
+								></span
+							>
+							<span
+								><a
+									class="nav-link text-black font-weight-bold"
+									href="{% url 'tos' %}"
+									>Terms</a
+								></span
+							>
+							<span
+								><a class="nav-link text-black font-weight-bold" href="#"
+									>Feed</a
+								></span
+							>
+						</div>
+					</nav>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
