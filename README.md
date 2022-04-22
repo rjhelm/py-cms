@@ -21,8 +21,8 @@
 
 ## Project Screenshots
 
-- [Command_Line_Django_Server](![image](https://github.com/rjhelm/py-cms/blob/main/flackoblog/assets/cms-cmdline.png?raw=true))
-- [Django_Admin_Panel](![image](https://user-images.githubusercontent.com/77085453/164585920-3b40f8f2-4259-4fd8-9ba2-22e4d25f514f.png))
+- [Command_Line_Django_Server](https://github.com/rjhelm/py-cms/blob/main/flackoblog/assets/cms-cmdline.png?raw=true)
+- [Django_Admin_Panel](https://user-images.githubusercontent.com/77085453/164585920-3b40f8f2-4259-4fd8-9ba2-22e4d25f514f.png)
 
 ## Usage
 
