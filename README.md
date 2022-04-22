@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
  <h1 align="center">readme-generator</h1>
 
     ## Description
